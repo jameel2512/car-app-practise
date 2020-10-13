@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jameel.everica">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+        <!--  -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- <activity -->
+        <!-- android:name=".DriversMap" -->
+        <!-- android:label="@string/title_activity_customer_maps" /> -->
+        <!-- <activity android:name=".DriversMap2" /> -->
+
+        <activity
+            android:name=".UsersApp.DashBoard_UsersApp"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VendorApp.SplashScreen.SplashActivityVendorApp" />
+        <activity android:name=".VendorApp.DashBoard_VendorApp" />
+        <activity android:name=".VendorApp.AllRideHistoryActivity_VendorApp" />
+        <activity android:name=".VendorApp.CurrentRideActivity_VendorApp" />
+        <activity android:name=".UsersApp.Login_Signup.LoginwithEmailActivity_UserApp" />
+        <activity android:name=".UsersApp.Login_Signup.LoginwithPhoneActivity_UserApp" />
+        <activity android:name=".VendorApp.Adding_RentCar_Information_VendorApp" />
+        <activity android:name=".VendorApp_OR_UsersApp_SelectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UsersApp.Login_Signup.SignupActivity_UsersApp" />
+        <activity android:name=".VendorApp.SignupActivity_VendorsApp" />
+        <activity android:name=".VendorApp.LoginwithemailActivity_VendorsApp" />
+        <activity android:name=".UsersApp.Location_And_DateTime_Activity_UsersApp" />
+        <activity android:name=".UsersApp.TripFair_And_All_Information_UsersApp" />
+        <activity
+            android:name=".UsersApp.StartActivity_UsersApp"
+            android:label="@string/title_activity_start__users_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UsersApp.NewBookings_List_Activity_UsersApp" />
+        <activity android:name=".VendorApp.NewBooking_List_VendorApp" />
+
+        <receiver
+            android:name=".AlertReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".VendorApp.NewBooking_Details_Show_VendorsApp" />
+        <activity android:name=".VendorApp.Current_Booking_Time_VendorsApp" />
+        <activity android:name=".VendorApp.Current_Booking_Payment_Collect_VendorsApp" />
+        <activity android:name=".UsersApp.NewBooking_Details_Show_UsersApp" />
+        <activity android:name=".UsersApp.Current_Booking_Time_UsersApp" />
+        <activity android:name=".UsersApp.Current_Booking_Payment_Collect_UsersApp" />
+        <activity android:name=".UsersApp.Completed_Bookings_UsersApp"></activity>
+    </application>
+
+</manifest>

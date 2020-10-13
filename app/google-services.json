@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "576189937866",
+    "firebase_url": "https://everica-636fa.firebaseio.com",
+    "project_id": "everica-636fa",
+    "storage_bucket": "everica-636fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576189937866:android:f655ef51eee31279629c33",
+        "android_client_info": {
+          "package_name": "com.example.jameel.everica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576189937866-8jc1udbqtd6kc2h5jeard2ev1pdag6im.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jameel.everica",
+            "certificate_hash": "5388b72a232b27b9b5e11a0a82db60b86ef94e44"
+          }
+        },
+        {
+          "client_id": "576189937866-7emt8l3fu82bq95m5q1s4vhuno9qbckr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQpoIMs2ToEeB-1YiniDzov9dhrMhFCkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576189937866-7emt8l3fu82bq95m5q1s4vhuno9qbckr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

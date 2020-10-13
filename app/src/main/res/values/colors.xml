@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202227</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0ae3ea</color>
+    <color name="buttoncolor">#FF0AEA15</color>
+    <color name="blackcolor">#202227</color>
+    <color name="whitecolor">#faf9f8</color>
+
+    <color name="browncolor">#9f3838</color>
+    <color name="purplecolor">#a718c7</color>
+
+
+    <color name="basereleasecolor">#212121</color>
+    <color name="basepresscolor">#FAFAFA</color>
+    <color name="ballreleasecolor">#9E9E9E</color>
+
+    <color name="backgrundfragment">#2b2b2b</color>
+
+</resources>

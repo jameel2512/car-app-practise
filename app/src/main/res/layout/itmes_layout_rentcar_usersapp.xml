@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_cardview_rentacar"
+    android:layout_marginTop="10sp"
+    android:layout_marginBottom="20sp"
+    app:cardCornerRadius="20sp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:id="@+id/relativelayout_rent_Car"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/id_Rl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0sp"
+            android:layout_marginTop="0sp"
+            android:padding="10sp"
+
+            >
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/id_rc_itmes_carimage"-->
+            <!--android:layout_width="80sp"-->
+            <!--android:layout_height="80sp"-->
+            <!--android:src="@drawable/car"-->
+
+            <!--/>-->
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:layout_width="80sp"-->
+            <!--android:layout_height="80sp"-->
+            <!--android:id="@+id/id_rc_itmes_carimage"-->
+            <!--android:src="@drawable/car"-->
+            <!--/>-->
+
+
+            <TextView
+                android:id="@+id/id_rc_itmes_carprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="price"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/id_Rl_4"-->
+        <!--android:layout_marginLeft="10sp"-->
+
+
+        <!--&gt;-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Book now"-->
+        <!--android:layout_marginTop="50sp"-->
+        <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:id="@+id/id_Rl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="0sp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/id_rc_itmes_carmodal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Modal Name"
+                android:textSize="12sp"
+
+                />
+
+            <TextView
+                android:id="@+id/id_rc_itmes_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_rc_itmes_carmodal_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:text="cartype"
+                android:textSize="12sp"  />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_Rl_3"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100sp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/id_rc_itmes_carmodal_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Modal no"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_rc_itmes_car_codition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_rc_itmes_carmodal_no"
+                android:layout_marginTop="50sp"
+                android:text="condition"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_Rl_4"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            >
+
+            <Button
+                android:id="@+id/id_rc_items_booknow_btn"
+                android:layout_width="70sp"
+                android:layout_height="30sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30sp"
+                android:text="Book now"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

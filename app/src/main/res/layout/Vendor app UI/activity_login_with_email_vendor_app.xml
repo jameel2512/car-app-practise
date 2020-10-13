@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jameel.everica.VendorApp.LoginwithEmailActivity_VendorApp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login With Email"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/id_loginhead"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20sp"
+        android:layout_below="@+id/id_loginhead"
+        >
+
+
+
+        <EditText
+            android:id="@+id/id_loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/id_loginhead"
+            android:padding="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:hint="Email"
+            android:layout_marginRight="60sp"
+            android:layout_marginLeft="60sp"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/id_signupcontact"
+            android:hint="Password"
+            >
+
+
+
+            <EditText
+                android:id="@+id/id_loginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_below="@+id/id_loginemail"
+                android:padding="10sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:hint="Password"
+                android:layout_marginRight="60sp"
+                android:layout_marginLeft="60sp"
+                android:inputType="textPassword"
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/id_loginButton"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_gravity="center"
+            android:layout_below="@+id/id_loginpassword"
+            android:layout_marginTop="30sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/id_login_login_withPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login With Phone?"
+            android:layout_below="@+id/id_loginButton"
+            android:layout_marginTop="30sp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="20sp"
+            android:textColor="@color/blackcolor"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/id_loginCreateNewAccount"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Create New Account?"
+            android:layout_below="@+id/id_loginButton"
+            android:layout_marginTop="10sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="20sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

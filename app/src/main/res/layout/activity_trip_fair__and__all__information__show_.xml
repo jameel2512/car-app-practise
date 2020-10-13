@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jameel.everica.UsersApp.TripFair_And_All_Information_UsersApp">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Trip Fare Information"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70sp"
+            app:cardCornerRadius="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:id="@+id/id_tripfare_totalfare_tv"
+                android:text="Total Fare"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20sp"
+                android:layout_below="@id/id_ldt_hoursforRentCar"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:padding="5sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/blackcolor"
+                />
+
+
+            <TextView
+                android:id="@+id/id_tripfare_totalfareAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginTop="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:hint="Fare"
+                android:gravity="center"
+                android:padding="5sp"
+                android:textColor="@color/colorAccent"
+                android:layout_centerInParent="true"
+                />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            app:cardCornerRadius="20sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:padding="10sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_car_Category_tv"
+                    android:text="Car Category:"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_below="@id/id_ldt_hoursforRentCar"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_car_Category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"
+                    android:hint="Car Category"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/purplecolor"
+                    android:textSize="12sp"
+
+                    />
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_carmodalName_No_tv"
+                    android:text="Car Modal:"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_below="@id/id_tripfare_car_Category_tv"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_carmodalName_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"
+                    android:hint="Car Modal"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/purplecolor"
+                    android:textSize="12sp"
+                    android:layout_below="@id/id_tripfare_car_Category"
+
+                    />
+
+
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_tripfare_startTimeDate_tv"
+                android:text="Start Time:"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20sp"
+                android:layout_below="@id/id_tripfare_carmodalName_No_tv"
+                android:layout_marginTop="10sp"
+                android:gravity="center"
+                android:padding="5sp"
+                android:textColor="@color/blackcolor"
+                />
+
+
+            <TextView
+                android:id="@+id/id_tripfare_startTimeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:hint="Start DateTimeShow"
+                android:gravity="center"
+                android:padding="5sp"
+                android:textColor="@color/purplecolor"
+                android:textSize="12sp"
+                android:layout_below="@+id/id_tripfare_carmodalName_No"
+
+                />
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_endTimeDate_tv"
+                    android:text="End Time:"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_below="@id/id_tripfare_startTimeDate_tv"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_endTimeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"
+                    android:hint="End DateTimeShow"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/purplecolor"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/id_tripfare_startTimeDate"
+
+                    />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_pickuplocation_tv"
+                    android:text="Pickup Location:"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_below="@id/id_tripfare_endTimeDate_tv"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_pickuplocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"
+                    android:hint="Pickup Location Show"
+                    android:gravity="right"
+                    android:padding="5sp"
+                    android:textColor="@color/purplecolor"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/id_tripfare_endTimeDate"
+
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_durationHours_tv"
+                    android:text="Duration Hours:"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_below="@id/id_tripfare_pickuplocation_tv"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_durationHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"
+                    android:hint="Hours Show"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:textColor="@color/purplecolor"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/id_tripfare_pickuplocation"
+
+                    />
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_rg_driver"
+                    android:layout_below="@id/id_tripfare_durationHours_tv"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_below="@id/id_tripfare_durationHours_tv"-->
+                    <!--android:id="@+id/id_tripfare_rg_driver"-->
+
+                    <!--&gt;-->
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rental with Driver"
+                        android:textSize="12sp"
+                        android:id="@+id/id_tripfare_rb_withdriver"
+
+
+                        />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rental without Driver"
+                        android:textSize="12sp"
+                        android:id="@+id/id_tripfare_rb_withoutdriver"
+
+
+                        />
+
+
+                <!--</LinearLayout>-->
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_rg_fuel"
+                    android:layout_below="@id/id_tripfare_rg_driver"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:orientation="horizontal"
+                    >
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_below="@id/id_tripfare_rg_driver"-->
+                    <!--android:id="@+id/id_tripfare_rg_fuel"-->
+                    <!--&gt;-->
+
+
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="With Fuel"
+                        android:textSize="12sp"
+                        android:id="@+id/id_tripfare_rb_withfuel"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Without Fuel"
+                        android:textSize="12sp"
+                        android:id="@+id/id_tripfare_rb_withoutfuel"
+
+                        />
+
+                <!--</LinearLayout>-->
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/id_tripfare_paymentmethod_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tripfare_rg_fuel"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:text="Payment Method:"
+                    android:textColor="@color/browncolor"
+                    android:textSize="15sp"
+
+                    />
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_tripfare_rg_payment"
+                    android:layout_below="@id/id_tripfare_paymentmethod_tv"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"
+                    android:orientation="horizontal"
+
+
+                    >
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                <!--android:id="@+id/id_tripfare_rg_payment"-->
+                    <!--android:layout_below="@+id/id_tripfare_paymentmethod_tv"-->
+
+
+
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:textSize="12sp"
+                    android:id="@+id/id_tripfare_rb_cash"
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Transfer"
+                    android:textSize="12sp"
+                    android:id="@+id/id_tripfare_rb_bankTransfer"
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:textSize="12sp"
+                    android:id="@+id/id_tripfare_rb_creditCard"
+
+                    />
+
+
+            <!--</LinearLayout>-->
+
+            </RadioGroup>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:id="@+id/id_tripfare_checkAmount"
+                android:text="Check Fare"
+                android:textSize="12sp"
+                android:layout_marginLeft="120sp"
+                android:layout_marginRight="120sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="0sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_tripfare_confirmbooking_btn"
+                android:text="Confirm Booking"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

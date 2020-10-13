@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout_mybookings_vendorsapp"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_marginTop="10sp"
+        app:cardCornerRadius="20sp"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:padding="5sp"
+
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/id_mybookings_Relative1_usersapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:padding="5sp"
+
+                >
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/id_currentride_items_image"-->
+                <!--android:layout_width="70sp"-->
+                <!--android:layout_height="70sp"-->
+
+                <!--&gt;-->
+
+                <!--</de.hdodenhof.circleimageview.CircleImageView>-->
+
+
+                <TextView
+                    android:id="@+id/id_my_bookings_items_total_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="0sp"
+                    android:layout_marginLeft="0sp"
+                    android:text="Total Fare"
+                    android:textSize="12sp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/id_mybookings_Relative2_usersapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/id_mybookings_Relative1_usersapp"
+                android:padding="5sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name No"
+                    android:id="@+id/id_my_bookings_items_customer_name_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="0sp"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorAccent"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Modal Name no"
+                    android:id="@+id/id_my_bookings_items_carmodal_Name_No"
+                    android:layout_marginLeft="0sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/browncolor"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/id_my_bookings_Relative3_usersapp"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5sp"
+                android:padding="5sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Location"
+                    android:id="@+id/id_my_bookings_items_pickup_location"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting Date Time"
+                    android:id="@+id/id_my_bookings_items_starting_Date_Time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
