@@ -41,6 +41,7 @@ public class SignupActivity_UsersApp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_usersapp);
+
         final Intent intent = getIntent();
 
         editText_contact = (EditText) findViewById(R.id.id_signup_contact);
@@ -74,16 +75,11 @@ public class SignupActivity_UsersApp extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
-
-
-
                 final String name = editText_username.getText().toString().trim();
                 final String email = editText_email.getText().toString().trim();
                 final String password = editText_password.getText().toString().trim();
                 final String confirm_password = editText_confirmpassword.getText().toString().trim();
                 final String contact_no = editText_contact.getText().toString().trim();
-
 
 
                 final ProfileInfoHelper_UsersApp userProfile_info = new ProfileInfoHelper_UsersApp
@@ -132,7 +128,6 @@ public class SignupActivity_UsersApp extends AppCompatActivity {
 
                                     if (task.isSuccessful()) {
 
-
                                         databaseReference.child(firebaseAuth.getCurrentUser().getUid())
                                                 .child("users profile information")
                                                 .setValue(userProfile_info).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -159,18 +154,17 @@ public class SignupActivity_UsersApp extends AppCompatActivity {
                                             }
 
                                         });
+
                                     } else {
 
                                         Toast.makeText(SignupActivity_UsersApp.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                         progressDialog.dismiss();
 
-
                                     }
 
                                 }
+
                             });
-
-
 
                 }
 
@@ -217,6 +211,9 @@ public class SignupActivity_UsersApp extends AppCompatActivity {
 
 
 
-
     }
+
+
+
+
 }

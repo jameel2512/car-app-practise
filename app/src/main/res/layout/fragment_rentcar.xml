@@ -161,7 +161,6 @@
         android:id="@+id/id_rentacar_recyvlerview"
         >
 
-
         </android.support.v7.widget.RecyclerView>
 
 

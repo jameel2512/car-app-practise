@@ -106,8 +106,6 @@ public class NewBooking_Details_Show_UsersApp extends AppCompatActivity {
             car_Category= intent.getString("car_category");
             car_Price_Perhour=intent.getString("car_price_per_hour");
 
-
-
         }catch (Exception e)
         {
             Toast.makeText(this, "intent: "+e.getMessage(), Toast.LENGTH_SHORT).show();

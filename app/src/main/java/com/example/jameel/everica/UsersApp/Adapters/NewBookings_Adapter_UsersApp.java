@@ -57,6 +57,7 @@ public class NewBookings_Adapter_UsersApp extends RecyclerView.Adapter<NewBookin
         holder.carmodal_name_no_tv.setText(my_Current_booking.getCarModal_Name()
                 +" "+my_Current_booking.getCarModal_No());
 
+
         holder.relativeLayout_mybookings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

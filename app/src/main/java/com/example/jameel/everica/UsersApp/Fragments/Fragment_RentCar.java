@@ -101,7 +101,6 @@ public class Fragment_RentCar extends Fragment {
 
         textView_rentcar_head = (TextView) rentCar_view.findViewById(R.id.id_rentcar_texthead);
 
-
         recyclerView = (RecyclerView) rentCar_view.findViewById(R.id.id_rentacar_recyvlerview);
         recyclerView.setHasFixedSize(true);
 
@@ -142,7 +141,6 @@ public class Fragment_RentCar extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
 
 
 
